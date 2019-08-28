@@ -1,263 +1,71 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charSet="utf-8" />
-    <meta name="yandex-verification" content="fcd970af95944f37" />
-    <meta http-equiv="x-ua-compatible" content="ie=edge" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1, shrink-to-fit=no"
-    />
-    <meta name="generator" content="Gatsby 2.0.76" />
-    <title data-react-helmet="true">RC Tech | RC Tech</title>
-    <meta
-      data-react-helmet="true"
-      name="description"
-      content="Developer community at RC Lee Hall"
-    />
-    <meta data-react-helmet="true" property="og:title" content="RC Tech" />
-    <meta
-      data-react-helmet="true"
-      property="og:description"
-      content="Developer community at RC Lee Hall"
-    />
-    <meta data-react-helmet="true" property="og:type" content="website" />
-    <meta data-react-helmet="true" name="twitter:card" content="summary" />
-    <meta data-react-helmet="true" name="twitter:creator" content="@rcltech" />
-    <meta data-react-helmet="true" name="twitter:title" content="RC Tech" />
-    <meta
-      data-react-helmet="true"
-      name="twitter:description"
-      content="Developer community at RC Lee Hall"
-    />
-    <meta
-      data-react-helmet="true"
-      name="keywords"
-      content="rctech, hku, rclee"
-    />
-    <link rel="shortcut icon" href="/icons/icon-48x48.png" />
-    <link rel="manifest" href="/manifest.webmanifest" />
-    <meta name="theme-color" content="#000" />
-    <link
-      as="script"
-      rel="preload"
-      href="/webpack-runtime-43b4e312b9d3e41d6689.js"
-    />
-    <link as="script" rel="preload" href="/app-c850b5f53cf10739f7a9.js" />
-    <link as="script" rel="preload" href="/0-fd0f72b5375cb7e8fc74.js" />
-    <link as="script" rel="preload" href="/1-1f4ed995eadd99ea05a9.js" />
-    <link as="script" rel="preload" href="/9-fe3084140bb65c873867.js" />
-    <link
-      as="script"
-      rel="preload"
-      href="/component---src-pages-index-js-4ff19650ab5de6777199.js"
-    />
-    <link
-      as="fetch"
-      rel="preload"
-      href="/static/d/173/path---index-6a9-NZuapzHg3X9TaN1iIixfv1W23E.json"
-      crossOrigin="use-credentials"
-    />
-    <link
-      rel="stylesheet"
-      href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
-      integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
-      crossOrigin="anonymous"
-    />
-    <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,600,700,800,900"
-    />
-    <link
-      href="https://fonts.googleapis.com/css?family=Quicksand"
-      rel="stylesheet"
-    />
-  </head>
-  <body>
-    <div
-      id="___gatsby"
-      class="container-fluid"
-      style="background-color:#2F4A55"
-    >
-      <div style="outline:none" tabindex="-1" role="group">
-        <div>
-          <div class="container" style="height:100vh">
-            <header class="d-flex align-items-center jss1">
-              <div class="col-5 col-sm-2">
-                <div class="d-flex align-items-center justify-content-center">
-                  <div
-                    class=" gatsby-image-wrapper"
-                    style="position:relative;overflow:hidden;width:100%;max-width:70%;max-height:70%;margin:0 auto"
-                  >
-                    <div
-                      style="width:100%;padding-bottom:90.68541300527241%"
-                    ></div>
-                    <img
-                      src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAASCAYAAABb0P4QAAAACXBIWXMAAC4jAAAuIwF4pT92AAAEJklEQVQ4y32Ua0wcVRTHZ2kBjY2amPQDUYgsqDS0SotAuw8wTTU+CrWPtDGKtoG2lJ19Duzu7O6dKbDCNkBi1rZQsaSEkooYKwW2u4BQWinCFpYiIIo1JhI/9YPGRxqM1/88FvnkTU7uOZN7fvM/58wdRjcQTWCwdANT+3T9UyWSv6t/ismPzDL/t4y9t5W8/inDroFoscJQWJKTAvsRplXjJGnPi8wmHWrtTHZyjkSWiBstPmEDLNniJRviYAAfBXAMgp5eexsAVbBlVekj8IO6/klrfjjWsO9iD+dwufwA1gJ2HBaAmcw+gTMJNS8r0MmrqMqzHtgBG1XLfQLQr/DmUEE4ZjnhD6Qh2Q8LWnzkDGAnzV5ShPhnACukHH3fZBtU9jAqIBuwYewhNX4ccQBA587Q9Pk93UPvVXPcQSjkAbECGsTugtUAuFcW1Df5MXLGkPuqBDiG4D72O2rJkmKNDB+Ibiq8eiuRwmfJ6UT07iHYJsCSXu/sYw61dMYHgx5G58DoYPThmRLD8DcUD/7Gg+2KSnVa65bdza/5Nt6jWTeUTOT+brzxrcToYbIDrc/rrk8vF95alh58oR5KQF+Y7PGfmPL6Js16QHwdbQw+plZxwfDlPJVE7eydOMKkVzpb9YN3S40ji1RVykoH0b+N61WhzByUexl2BeVf8rGndkvfny40TYvGf5Byg9pKVwmTaRd6tSzfYhxddBbe/I7qrs9I0D0yhVINAFsA64D9Ve2vp876M9TlsB3NHZrfhhb9WTR+jxrHlpozHWJZhtXXxmRyp5/MtJEHGaw7aBxZOKYLy0CKsvMlZllD82ZAa2H/cHXvU7vbHUyb/TUbMKoPx6g+MuvIMHu8GTayCpY8AybdLuZq7cKqttJ5WX9togiDWtGF7lDDtQkZihIdNrGGcoJI3206ey4/cvcPYyS2tKOl25puct9MtwkPoLBYac5hUUOpg3nFKRgBXkwzub9+obGt2DA4G9NBgbF3fDdUhTh/A7XzHvrW2fYbLw7OdWW5/O2pLL/yjEMM7XcLL8msclEZ3htOIdmBW4Ab8Fl+tRh9ivXce05oNhsisfmC0PTq/rZP3rTynl9c9QFaKdYFU6zk83SLd2WvW+xyEtJUTYhB4tSJAsrxCjL1uEdIwbW6WOUjC0c84kSGmb+dVX+eNYRnfssLx8L4dFp8jc20nCftWXbSfdIrfArYB6e8Qo48vwmBqfASpWrWS9a+szKPkMoTYionNT5tBdeQd6nPWTA0d7+0+dyHbgzF5BMbHEQ4ANj2eA6EaA67STxQHDOUSr+n+KHBgPjwa966Z1PfOZGTN7zQcvBC1yj+Ot+bxNod8TOcT0gwqxUiFwyiOHFD+XILqsh/YGltG1naeuCjKyJvZXOluJQXNFbAJP9tXgEBLJ/9Fz+iL9QzfUHbAAAAAElFTkSuQmCC"
-                      alt=""
-                      style="position:absolute;top:0;left:0;width:100%;height:100%;object-fit:contain;object-position:center;opacity:1;transition:opacity 0.5s;transition-delay:0.25s"
-                    /><noscript
-                      ><picture
-                        ><source
-                          srcSet="/static/44c5138cdf417ba06b1a69f2ac14c25b/9085f/logo.png 250w,
-/static/44c5138cdf417ba06b1a69f2ac14c25b/ac416/logo.png 500w,
-/static/44c5138cdf417ba06b1a69f2ac14c25b/b3372/logo.png 1000w,
-/static/44c5138cdf417ba06b1a69f2ac14c25b/379e5/logo.png 1500w,
-/static/44c5138cdf417ba06b1a69f2ac14c25b/ecd2b/logo.png 2000w,
-/static/44c5138cdf417ba06b1a69f2ac14c25b/b41b9/logo.png 2845w"
-                          sizes="(max-width: 1000px) 100vw, 1000px"/>
-                        <img
-                          src="/static/44c5138cdf417ba06b1a69f2ac14c25b/b3372/logo.png"
-                          alt=""
-                          style="position:absolute;top:0;left:0;transition:opacity 0.5s;transition-delay:0.5s;opacity:1;width:100%;height:100%;object-fit:cover;object-position:center"/></picture
-                    ></noscript>
-                  </div>
-                </div>
-              </div>
-              <div class="d-none d-sm-block">
-                <a style="text-decoration:none" href="/team"
-                  ><h1 class="jss4">RC Tech Club</h1></a
-                >
-              </div>
-              <div class="ml-auto p-2">
-                <a style="text-decoration:none" href="/team"
-                  ><button
-                    class="jss31 jss5 jss7 jss10 jss2"
-                    tabindex="0"
-                    type="button"
-                  >
-                    <span class="jss6"
-                      ><h5 class="jss34 jss50 jss3">Team</h5></span
-                    >
-                  </button></a
-                >
-              </div>
-            </header>
-            <div class="row">
-              <div class="jss76 jss79 jss77 jss75 jss70">
-                <div class="row d-flex align-items-center">
-                  <div class="col-4 p-4">
-                    <div class="jss103">
-                      <div
-                        class=" gatsby-image-wrapper"
-                        style="position:relative;overflow:hidden"
-                      >
-                        <div style="width:100%;padding-bottom:141.4%"></div>
-                        <img
-                          src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAcCAYAAABh2p9gAAAACXBIWXMAAA7EAAAOxAGVKw4bAAADpElEQVRIx51UaXNSWRDl14z7GLVqNIlxyiUxMQvweDwgJBCi0SwEF4wJi2wPQpRogpESshCTEi3LpSaWlikz882Zms/jDzp2X/IQqAdVzodT977b3ef26e77DMevWFGPX3tksR69LOH84DUMjPnQd3UaPZ5JnOy3Vex6MDQytPQqOHBxAPEnebj8YfSMTGK5+IKIvTh4yfj/CH+5MIC5h1lsvt3B3td/8fbzHk6bnTjWbfk5QpbUsr+e6rfDn1pEdrOEi84xHOmScIIuqy6NLmG1saXXKrI4QjU83GkWZ7+ZnDjcZRZnDM2vPtZQfcDroU6TqFGH4kH3yAQuu8fRd21aNKb8PYEu17jwZ7+j+/I1jpoMuW4caBy7CeP1m5Am7ojVdOMWLJN+WKfuCrs0fhtmOuN9hzJSIdUl7KZu9o56yyREaJu+h6HbASjeGQGZiPm8d3QKVzxTOGfz0HhZGkvmmnGtuAEcxCR236y4wOGbExdI43doHu3NJVePC6NddqPd6karZRhnJCfOKi5qjIO+nSSzvNf8a7rMr6EGNBbHSMJZ2UWkLvxOktotVpyzyuiQZbRKMtlknDbRFHSyb228oX3wKvTQJjAq1lbHKMGDM3YP2mjf5ijb9eIMSlRFQ8RUOOIpDCXTFdhjSVibxBjk+3HUQ4kk0D8XRnB1A9u7X1D48BGFnY8oftpFoLCOgcB94aMXq0toJWdTMALv0goyr14jtV2CuvUC0eIWXKkFWMIx4aNLyIZ6aKRSKCqCJQLL6ZsNiYuqfeqhS6hl6Ms+RXxzGwulV5heforlN+/gz+WFTWkQp0vI2RgDEczl17Dx6TNKe39h5d0f+PrfNyG/fzYsfH4qQ5ZkoyCnmoaF9k51XshnokZyGxJqAUzE9eNRsdEIXc8sNa1f0wy1OrLED3//g9KXP5F7v1NDqEfclJCz42b4c+s0QjkxRvUklVHbP28imR0TMIciGFYDcMTClHFUnLFN8xukGg8mF2CjF8UJNMmQ6hdKILU1g5e7Xjx7fwuxjXs1ZNyg4JMc0oVVzBNuLGT0X4omgQmnHoeQKM4g+fwuJh+FqNPlC7njnN1SvoBMOo21/DMk1orlDMsPO6H72KWwSrITMAZVmEJqJUMmtJPMlbV1pFUVaiyK2Oo6DI54Eu75Bxii2/idulMP4Eln6Owhhqk24u8S4R/Gj7pWJJMtmF1BKLOI8OIj+B5nG/8car+ryep8uN6UqULguf0OVBnMecLdrWsAAAAASUVORK5CYII="
-                          alt=""
-                          style="position:absolute;top:0;left:0;width:100%;height:100%;object-fit:cover;object-position:center;opacity:1;transition:opacity 0.5s;transition-delay:0.25s"
-                        /><noscript
-                          ><picture
-                            ><source
-                              srcSet="/static/20516526519bd141f3774f4e6f66ab19/5f5eb/jsposter.png 150w,
-/static/20516526519bd141f3774f4e6f66ab19/07cb7/jsposter.png 300w,
-/static/20516526519bd141f3774f4e6f66ab19/1e875/jsposter.png 600w,
-/static/20516526519bd141f3774f4e6f66ab19/4ddaa/jsposter.png 900w,
-/static/20516526519bd141f3774f4e6f66ab19/759d8/jsposter.png 1000w"
-                              sizes="(max-width: 600px) 100vw, 600px"/>
-                            <img
-                              src="/static/20516526519bd141f3774f4e6f66ab19/1e875/jsposter.png"
-                              alt=""
-                              style="position:absolute;top:0;left:0;transition:opacity 0.5s;transition-delay:0.5s;opacity:1;width:100%;height:100%;object-fit:cover;object-position:center"/></picture
-                        ></noscript>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="p-2 col-8">
-                    <div class="jss105">
-                      <h2 class="jss34 jss47 jss61 jss72 jss73">
-                        Keep Calm and JS
-                      </h2>
-                      <h3 class="jss34 jss48 jss61 jss72 jss74">
-                        2nd February, 2019
-                      </h3>
-                      <p class="jss34 jss43 jss72">
-                        We introduce everyone to the first of the Keep Calm
-                        workshop series.
-                      </p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <script>
-      if (true) {
-        (function(i, s, o, g, r, a, m) {
-          i["GoogleAnalyticsObject"] = r;
-          (i[r] =
-            i[r] ||
-            function() {
-              (i[r].q = i[r].q || []).push(arguments);
-            }),
-            (i[r].l = 1 * new Date());
-          (a = s.createElement(o)), (m = s.getElementsByTagName(o)[0]);
-          a.async = 1;
-          a.src = g;
-          m.parentNode.insertBefore(a, m);
-        })(
-          window,
-          document,
-          "script",
-          "https://www.google-analytics.com/analytics.js",
-          "ga"
-        );
-      }
-      if (typeof ga === "function") {
-        ga("create", "UA-133175756-1", "auto", {});
-      }</script
-    ><script id="gatsby-script-loader">
-      /*<![CDATA[*/ window.page = {
-        componentChunkName: "component---src-pages-index-js",
-        jsonName: "index",
-        path: "/"
-      };
-      window.dataPath =
-        "173/path---index-6a9-NZuapzHg3X9TaN1iIixfv1W23E"; /*]]>*/</script
-    ><script id="gatsby-chunk-mapping">
-      /*<![CDATA[*/ window.___chunkMapping = {
-        app: ["/app-c850b5f53cf10739f7a9.js"],
-        "component---node-modules-gatsby-plugin-offline-app-shell-js": [
-          "/component---node-modules-gatsby-plugin-offline-app-shell-js-302b2f1c7106d1597605.js"
-        ],
-        "component---src-pages-404-js": [
-          "/component---src-pages-404-js-d6a1b99137b50688a53b.js"
-        ],
-        "component---src-pages-index-js": [
-          "/component---src-pages-index-js-4ff19650ab5de6777199.js"
-        ],
-        "component---src-pages-team-js": [
-          "/component---src-pages-team-js-49d56b628d56f98ec9b0.js"
-        ],
-        "pages-manifest": ["/pages-manifest-acbfb70ce90d9868a162.js"]
-      }; /*]]>*/</script
-    ><script
-      src="/component---src-pages-index-js-4ff19650ab5de6777199.js"
-      async=""
-    ></script
-    ><script src="/9-fe3084140bb65c873867.js" async=""></script
-    ><script src="/1-1f4ed995eadd99ea05a9.js" async=""></script
-    ><script src="/0-fd0f72b5375cb7e8fc74.js" async=""></script
-    ><script src="/app-c850b5f53cf10739f7a9.js" async=""></script
-    ><script src="/webpack-runtime-43b4e312b9d3e41d6689.js" async=""></script
-    ><script
-      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-      crossOrigin="anonymous"
-    ></script
-    ><script
-      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
-      integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
-      crossOrigin="anonymous"
-    ></script
-    ><script
-      src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
-      integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
-      crossOrigin="anonymous"
-    ></script>
-  </body>
-</html>
+<!DOCTYPE html><html lang="en"><head><meta charSet="utf-8"/><meta http-equiv="x-ua-compatible" content="ie=edge"/><meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/><meta name="generator" content="Gatsby 2.14.0"/><title data-react-helmet="true">RC Tech | RC Tech</title><meta data-react-helmet="true" name="description" content="Developer community at RC Lee Hall"/><meta data-react-helmet="true" property="og:title" content="RC Tech"/><meta data-react-helmet="true" property="og:description" content="Developer community at RC Lee Hall"/><meta data-react-helmet="true" property="og:type" content="website"/><meta data-react-helmet="true" name="twitter:card" content="summary"/><meta data-react-helmet="true" name="twitter:creator" content="@rcltech"/><meta data-react-helmet="true" name="twitter:title" content="RC Tech"/><meta data-react-helmet="true" name="twitter:description" content="Developer community at RC Lee Hall"/><meta data-react-helmet="true" name="keywords" content="rctech, hku, rclee"/><link rel="shortcut icon" href="/icons/icon-48x48.png?v=2ed7a5c7fd95eac99cda3d81c9d2d9d7"/><link rel="manifest" href="/manifest.webmanifest"/><meta name="theme-color" content="#000"/><link rel="apple-touch-icon" sizes="48x48" href="/icons/icon-48x48.png?v=2ed7a5c7fd95eac99cda3d81c9d2d9d7"/><link rel="apple-touch-icon" sizes="72x72" href="/icons/icon-72x72.png?v=2ed7a5c7fd95eac99cda3d81c9d2d9d7"/><link rel="apple-touch-icon" sizes="96x96" href="/icons/icon-96x96.png?v=2ed7a5c7fd95eac99cda3d81c9d2d9d7"/><link rel="apple-touch-icon" sizes="144x144" href="/icons/icon-144x144.png?v=2ed7a5c7fd95eac99cda3d81c9d2d9d7"/><link rel="apple-touch-icon" sizes="192x192" href="/icons/icon-192x192.png?v=2ed7a5c7fd95eac99cda3d81c9d2d9d7"/><link rel="apple-touch-icon" sizes="256x256" href="/icons/icon-256x256.png?v=2ed7a5c7fd95eac99cda3d81c9d2d9d7"/><link rel="apple-touch-icon" sizes="384x384" href="/icons/icon-384x384.png?v=2ed7a5c7fd95eac99cda3d81c9d2d9d7"/><link rel="apple-touch-icon" sizes="512x512" href="/icons/icon-512x512.png?v=2ed7a5c7fd95eac99cda3d81c9d2d9d7"/><link rel="preconnect dns-prefetch" href="https://www.google-analytics.com"/><link as="script" rel="preload" href="/webpack-runtime-29fe2420a4567f3007a7.js"/><link as="script" rel="preload" href="/app-46cbf221fde7974db1af.js"/><link as="script" rel="preload" href="/commons-51531fabdce590942fcc.js"/><link as="script" rel="preload" href="/component---src-pages-index-js-1df19dbb2d532c561155.js"/><link as="fetch" rel="preload" href="/page-data/index/page-data.json" crossorigin="anonymous"/><link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous"/><link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,600,700,800,900"/><link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet"/></head><body><div id="___gatsby" class="container-fluid" style="background-color:#2F4A55"><div style="outline:none" tabindex="-1" role="group" id="gatsby-focus-wrapper"><div><div class="container"><header class="d-flex align-items-center jss1"><div class="col-5 col-sm-2"><div class="d-flex align-items-center justify-content-center"><div class=" gatsby-image-wrapper" style="position:relative;overflow:hidden;width:100%;margin:0 auto"><div style="width:100%;padding-bottom:90.68541300527241%"></div><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAASCAYAAABb0P4QAAAACXBIWXMAAC4jAAAuIwF4pT92AAAEJklEQVQ4y32Ua0wcVRTHZ2kBjY2amPQDUYgsqDS0SotAuw8wTTU+CrWPtDGKtoG2lJ19Duzu7O6dKbDCNkBi1rZQsaSEkooYKwW2u4BQWinCFpYiIIo1JhI/9YPGRxqM1/88FvnkTU7uOZN7fvM/58wdRjcQTWCwdANT+3T9UyWSv6t/ismPzDL/t4y9t5W8/inDroFoscJQWJKTAvsRplXjJGnPi8wmHWrtTHZyjkSWiBstPmEDLNniJRviYAAfBXAMgp5eexsAVbBlVekj8IO6/klrfjjWsO9iD+dwufwA1gJ2HBaAmcw+gTMJNS8r0MmrqMqzHtgBG1XLfQLQr/DmUEE4ZjnhD6Qh2Q8LWnzkDGAnzV5ShPhnACukHH3fZBtU9jAqIBuwYewhNX4ccQBA587Q9Pk93UPvVXPcQSjkAbECGsTugtUAuFcW1Df5MXLGkPuqBDiG4D72O2rJkmKNDB+Ibiq8eiuRwmfJ6UT07iHYJsCSXu/sYw61dMYHgx5G58DoYPThmRLD8DcUD/7Gg+2KSnVa65bdza/5Nt6jWTeUTOT+brzxrcToYbIDrc/rrk8vF95alh58oR5KQF+Y7PGfmPL6Js16QHwdbQw+plZxwfDlPJVE7eydOMKkVzpb9YN3S40ji1RVykoH0b+N61WhzByUexl2BeVf8rGndkvfny40TYvGf5Byg9pKVwmTaRd6tSzfYhxddBbe/I7qrs9I0D0yhVINAFsA64D9Ve2vp876M9TlsB3NHZrfhhb9WTR+jxrHlpozHWJZhtXXxmRyp5/MtJEHGaw7aBxZOKYLy0CKsvMlZllD82ZAa2H/cHXvU7vbHUyb/TUbMKoPx6g+MuvIMHu8GTayCpY8AybdLuZq7cKqttJ5WX9togiDWtGF7lDDtQkZihIdNrGGcoJI3206ey4/cvcPYyS2tKOl25puct9MtwkPoLBYac5hUUOpg3nFKRgBXkwzub9+obGt2DA4G9NBgbF3fDdUhTh/A7XzHvrW2fYbLw7OdWW5/O2pLL/yjEMM7XcLL8msclEZ3htOIdmBW4Ab8Fl+tRh9ivXce05oNhsisfmC0PTq/rZP3rTynl9c9QFaKdYFU6zk83SLd2WvW+xyEtJUTYhB4tSJAsrxCjL1uEdIwbW6WOUjC0c84kSGmb+dVX+eNYRnfssLx8L4dFp8jc20nCftWXbSfdIrfArYB6e8Qo48vwmBqfASpWrWS9a+szKPkMoTYionNT5tBdeQd6nPWTA0d7+0+dyHbgzF5BMbHEQ4ANj2eA6EaA67STxQHDOUSr+n+KHBgPjwa966Z1PfOZGTN7zQcvBC1yj+Ot+bxNod8TOcT0gwqxUiFwyiOHFD+XILqsh/YGltG1naeuCjKyJvZXOluJQXNFbAJP9tXgEBLJ/9Fz+iL9QzfUHbAAAAAElFTkSuQmCC" alt="" style="position:absolute;top:0;left:0;width:100%;height:100%;object-fit:contain;object-position:center;opacity:1;transition-delay:500ms"/><noscript><picture><source srcset="/static/44c5138cdf417ba06b1a69f2ac14c25b/69781/logo.png 250w,
+/static/44c5138cdf417ba06b1a69f2ac14c25b/3fa08/logo.png 500w,
+/static/44c5138cdf417ba06b1a69f2ac14c25b/e9c7b/logo.png 1000w,
+/static/44c5138cdf417ba06b1a69f2ac14c25b/a4fe2/logo.png 1500w,
+/static/44c5138cdf417ba06b1a69f2ac14c25b/dc9f7/logo.png 2000w,
+/static/44c5138cdf417ba06b1a69f2ac14c25b/f4e98/logo.png 2845w" sizes="(max-width: 1000px) 100vw, 1000px" /><img loading="lazy" sizes="(max-width: 1000px) 100vw, 1000px" srcset="/static/44c5138cdf417ba06b1a69f2ac14c25b/69781/logo.png 250w,
+/static/44c5138cdf417ba06b1a69f2ac14c25b/3fa08/logo.png 500w,
+/static/44c5138cdf417ba06b1a69f2ac14c25b/e9c7b/logo.png 1000w,
+/static/44c5138cdf417ba06b1a69f2ac14c25b/a4fe2/logo.png 1500w,
+/static/44c5138cdf417ba06b1a69f2ac14c25b/dc9f7/logo.png 2000w,
+/static/44c5138cdf417ba06b1a69f2ac14c25b/f4e98/logo.png 2845w" src="/static/44c5138cdf417ba06b1a69f2ac14c25b/e9c7b/logo.png" alt="" style="position:absolute;top:0;left:0;opacity:1;width:100%;height:100%;object-fit:cover;object-position:center"/></picture></noscript></div></div></div><div class="d-none d-sm-block"><a style="text-decoration:none" href="/team"><h1 class="jss4">RC Tech Club</h1></a></div></header><div class="jss5 jss29"><div class="jss6 jss45 jss65 jss79"><div class="jss102"><div class="jss108"><div class="jss107 gatsby-image-wrapper" style="position:relative;overflow:hidden"><div style="width:100%;padding-bottom:100%"></div><img src="data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAAUABQDASIAAhEBAxEB/8QAGQABAAIDAAAAAAAAAAAAAAAAAAMFAQIE/8QAFAEBAAAAAAAAAAAAAAAAAAAAAP/aAAwDAQACEAMQAAABuoJOEsmBXyBuD//EAB0QAAMAAQUBAAAAAAAAAAAAAAECAwQAEBESIST/2gAIAQEAAQUCJCiVlrs5XrFgtdVP05Hscc8w/8QAFBEBAAAAAAAAAAAAAAAAAAAAIP/aAAgBAwEBPwEf/8QAFBEBAAAAAAAAAAAAAAAAAAAAIP/aAAgBAgEBPwEf/8QAHxAAAgECBwAAAAAAAAAAAAAAAAERAhADEiIxQVFh/9oACAEBAAY/Am3shxKfttXI809J2w0Mpk//xAAcEAEAAwACAwAAAAAAAAAAAAABABEhEEExUWH/2gAIAQEAAT8hcqgtiwAOhWcEZ4Yr3KJBfg4XRgk0HrSO1bU//9oADAMBAAIAAwAAABDgwDz/xAAUEQEAAAAAAAAAAAAAAAAAAAAg/9oACAEDAQE/EB//xAAUEQEAAAAAAAAAAAAAAAAAAAAg/9oACAECAQE/EB//xAAdEAEAAgIDAQEAAAAAAAAAAAABABEhQTFRYXGx/9oACAEBAAE/ELCQJ0ENPt557HkeZceniLU6CIWQ4NKylr5GnI4ZuxQe0zuRiGnj8WWfMN/FJ//Z" alt="" style="position:absolute;top:0;left:0;width:100%;height:100%;object-fit:cover;object-position:center;opacity:1;transition-delay:500ms"/><noscript><picture><source srcset="/static/ee4c2a8f25ed6ecde586ec1fd5ba60bb/cb3d3/utkarsh.jpg 150w,
+/static/ee4c2a8f25ed6ecde586ec1fd5ba60bb/c83a6/utkarsh.jpg 300w,
+/static/ee4c2a8f25ed6ecde586ec1fd5ba60bb/775d9/utkarsh.jpg 600w,
+/static/ee4c2a8f25ed6ecde586ec1fd5ba60bb/2b1a3/utkarsh.jpg 900w,
+/static/ee4c2a8f25ed6ecde586ec1fd5ba60bb/81ef8/utkarsh.jpg 1200w,
+/static/ee4c2a8f25ed6ecde586ec1fd5ba60bb/73cf5/utkarsh.jpg 3637w" sizes="(max-width: 600px) 100vw, 600px" /><img loading="lazy" sizes="(max-width: 600px) 100vw, 600px" srcset="/static/ee4c2a8f25ed6ecde586ec1fd5ba60bb/cb3d3/utkarsh.jpg 150w,
+/static/ee4c2a8f25ed6ecde586ec1fd5ba60bb/c83a6/utkarsh.jpg 300w,
+/static/ee4c2a8f25ed6ecde586ec1fd5ba60bb/775d9/utkarsh.jpg 600w,
+/static/ee4c2a8f25ed6ecde586ec1fd5ba60bb/2b1a3/utkarsh.jpg 900w,
+/static/ee4c2a8f25ed6ecde586ec1fd5ba60bb/81ef8/utkarsh.jpg 1200w,
+/static/ee4c2a8f25ed6ecde586ec1fd5ba60bb/73cf5/utkarsh.jpg 3637w" src="/static/ee4c2a8f25ed6ecde586ec1fd5ba60bb/775d9/utkarsh.jpg" alt="" style="position:absolute;top:0;left:0;opacity:1;width:100%;height:100%;object-fit:cover;object-position:center"/></picture></noscript></div></div><div class="jss110"><h2 class="jss111 jss124 jss138 jss104 jss105">Utkarsh Goel</h2><h3 class="jss111 jss125 jss138 jss104 jss106">Founder</h3><p class="jss111 jss120 jss104">What is a community without developers?</p></div></div></div><div class="jss6 jss45 jss65 jss79"><div class="jss102"><div class="jss108"><div class="jss107 gatsby-image-wrapper" style="position:relative;overflow:hidden"><div style="width:100%;padding-bottom:100%"></div><img src="data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAAUABQDASIAAhEBAxEB/8QAGQABAAMBAQAAAAAAAAAAAAAAAAIDBgQF/8QAFgEBAQEAAAAAAAAAAAAAAAAAAQAC/9oADAMBAAIQAxAAAAGmVU8vuKlZzqE0AH//xAAcEAACAgIDAAAAAAAAAAAAAAABAgADERIQISL/2gAIAQEAAQUCvtKRXL15EsbeZOq1+UPY4//EABQRAQAAAAAAAAAAAAAAAAAAACD/2gAIAQMBAT8BH//EABQRAQAAAAAAAAAAAAAAAAAAACD/2gAIAQIBAT8BH//EABwQAQABBAMAAAAAAAAAAAAAAAEAAhARISIxcf/aAAgBAQAGPwIKTbBTDktqYnLuMPS3/8QAHRABAAICAgMAAAAAAAAAAAAAAQARITEQQXGR8P/aAAgBAQABPyHyYDMBIn3ASlJQDQjRobKlQtfaJBWfDPH/2gAMAwEAAgADAAAAEIvPfv/EABURAQEAAAAAAAAAAAAAAAAAABAB/9oACAEDAQE/ECH/xAAWEQEBAQAAAAAAAAAAAAAAAAAQARH/2gAIAQIBAT8Qwp//xAAcEAEBAQEAAgMAAAAAAAAAAAABEQAhMUGhwfD/2gAIAQEAAT8QCOaIFAPvQ1BEg8dMKoz26UylH3c8xPBfDSfOkwn0eLlWnJM9n5OPG//Z" alt="" style="position:absolute;top:0;left:0;width:100%;height:100%;object-fit:cover;object-position:center;opacity:1;transition-delay:500ms"/><noscript><picture><source srcset="/static/e08f8ff153abfc84b4ea148d0d758ebc/cb3d3/seanchok.jpg 150w,
+/static/e08f8ff153abfc84b4ea148d0d758ebc/c83a6/seanchok.jpg 300w,
+/static/e08f8ff153abfc84b4ea148d0d758ebc/775d9/seanchok.jpg 600w,
+/static/e08f8ff153abfc84b4ea148d0d758ebc/2b1a3/seanchok.jpg 900w,
+/static/e08f8ff153abfc84b4ea148d0d758ebc/426ce/seanchok.jpg 1024w" sizes="(max-width: 600px) 100vw, 600px" /><img loading="lazy" sizes="(max-width: 600px) 100vw, 600px" srcset="/static/e08f8ff153abfc84b4ea148d0d758ebc/cb3d3/seanchok.jpg 150w,
+/static/e08f8ff153abfc84b4ea148d0d758ebc/c83a6/seanchok.jpg 300w,
+/static/e08f8ff153abfc84b4ea148d0d758ebc/775d9/seanchok.jpg 600w,
+/static/e08f8ff153abfc84b4ea148d0d758ebc/2b1a3/seanchok.jpg 900w,
+/static/e08f8ff153abfc84b4ea148d0d758ebc/426ce/seanchok.jpg 1024w" src="/static/e08f8ff153abfc84b4ea148d0d758ebc/775d9/seanchok.jpg" alt="" style="position:absolute;top:0;left:0;opacity:1;width:100%;height:100%;object-fit:cover;object-position:center"/></picture></noscript></div></div><div class="jss110"><h2 class="jss111 jss124 jss138 jss104 jss105">Sean Chok</h2><h3 class="jss111 jss125 jss138 jss104 jss106">Developer | Maker</h3><p class="jss111 jss120 jss104">is ridiculous sometimes...</p></div></div></div><div class="jss6 jss45 jss65 jss79"><div class="jss102"><div class="jss108"><div class="jss107 gatsby-image-wrapper" style="position:relative;overflow:hidden"><div style="width:100%;padding-bottom:100%"></div><img src="data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAAUABQDASIAAhEBAxEB/8QAGAABAQEBAQAAAAAAAAAAAAAAAAQCAQX/xAAWAQEBAQAAAAAAAAAAAAAAAAACAAH/2gAMAwEAAhADEAAAAYr4OnbHnqxeLMgL/8QAHBAAAgIDAQEAAAAAAAAAAAAAAQIAAxESEzEy/9oACAEBAAEFAsaVo5rXpmM4tXngbmVfXjFRP//EABURAQEAAAAAAAAAAAAAAAAAABEg/9oACAEDAQE/AWP/xAAXEQADAQAAAAAAAAAAAAAAAAAAEBEh/9oACAECAQE/AYY//8QAHhAAAgAGAwAAAAAAAAAAAAAAAAECERIgMkFRYXH/2gAIAQEABj8Cm34Up62ZRC5O7f/EAB0QAAICAgMBAAAAAAAAAAAAAAABESExQXGBofD/2gAIAQEAAT8h3RNJHotIXIOhtAoFsWLbTFljiO0JfgwImY+k/9oADAMBAAIAAwAAABA/8EL/xAAYEQADAQEAAAAAAAAAAAAAAAAAAREQUf/aAAgBAwEBPxCIK9xH/8QAGBEBAQADAAAAAAAAAAAAAAAAAAEhMWH/2gAIAQIBAT8Qyq8Iu3//xAAdEAEBAAICAwEAAAAAAAAAAAABEQAhMVFBYfCB/9oACAEBAAE/EGmgqWRZ5dTHBhCbRDcft4hQJGTeEfNiLx3gtBVug9GaREGcrrCV+bzgGk8/mDoBaujtn//Z" alt="" style="position:absolute;top:0;left:0;width:100%;height:100%;object-fit:cover;object-position:center;opacity:1;transition-delay:500ms"/><noscript><picture><source srcset="/static/51260249bc26fefea8671c6f36beac95/cb3d3/gela.jpg 150w,
+/static/51260249bc26fefea8671c6f36beac95/c83a6/gela.jpg 300w,
+/static/51260249bc26fefea8671c6f36beac95/775d9/gela.jpg 600w,
+/static/51260249bc26fefea8671c6f36beac95/2b1a3/gela.jpg 900w,
+/static/51260249bc26fefea8671c6f36beac95/81ef8/gela.jpg 1200w" sizes="(max-width: 600px) 100vw, 600px" /><img loading="lazy" sizes="(max-width: 600px) 100vw, 600px" srcset="/static/51260249bc26fefea8671c6f36beac95/cb3d3/gela.jpg 150w,
+/static/51260249bc26fefea8671c6f36beac95/c83a6/gela.jpg 300w,
+/static/51260249bc26fefea8671c6f36beac95/775d9/gela.jpg 600w,
+/static/51260249bc26fefea8671c6f36beac95/2b1a3/gela.jpg 900w,
+/static/51260249bc26fefea8671c6f36beac95/81ef8/gela.jpg 1200w" src="/static/51260249bc26fefea8671c6f36beac95/775d9/gela.jpg" alt="" style="position:absolute;top:0;left:0;opacity:1;width:100%;height:100%;object-fit:cover;object-position:center"/></picture></noscript></div></div><div class="jss110"><h2 class="jss111 jss124 jss138 jss104 jss105">Seyoung ‘Angela’ Park</h2><h3 class="jss111 jss125 jss138 jss104 jss106">Designer</h3><p class="jss111 jss120 jss104">She is a true member of the &quot;Commeownist&quot; party with an amazing sense for design</p></div></div></div><div class="jss6 jss45 jss65 jss79"><div class="jss102"><div class="jss108"><div class="jss107 gatsby-image-wrapper" style="position:relative;overflow:hidden"><div style="width:100%;padding-bottom:100%"></div><img src="data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAAUABQDASIAAhEBAxEB/8QAFwABAQEBAAAAAAAAAAAAAAAAAAIDBP/EABYBAQEBAAAAAAAAAAAAAAAAAAABAv/aAAwDAQACEAMQAAABxuIzqmyzl7Q3Cf/EABoQAQEBAQADAAAAAAAAAAAAAAECABEDITL/2gAIAQEAAQUCn1Q5Tu4qeE31ZEzfDf/EABcRAAMBAAAAAAAAAAAAAAAAAAABERD/2gAIAQMBAT8BsKLP/8QAFhEAAwAAAAAAAAAAAAAAAAAAABAR/9oACAECAQE/ASP/xAAaEAACAwEBAAAAAAAAAAAAAAAAIQEQMQKR/9oACAEBAAY/At9vIExkciiv/8QAHRAAAgMAAgMAAAAAAAAAAAAAAAERITFhkUFRsf/aAAgBAQABPyFrYeAl2rm6JJtLspNRstKLqIW2+DccJ+hIVH04j//aAAwDAQACAAMAAAAQoB/D/8QAGBEBAQADAAAAAAAAAAAAAAAAAQAQESH/2gAIAQMBAT8QUi2u1x//xAAWEQEBAQAAAAAAAAAAAAAAAAABEBH/2gAIAQIBAT8QDSGf/8QAHBABAAIDAQEBAAAAAAAAAAAAAQARITFBgaHB/9oACAEBAAE/EGzpFiCtsvCELnNuo2w3dr8gpHuyy/WGT0OljvyZSxytKha0vOjAXAKe+ovz4s//2Q==" alt="" style="position:absolute;top:0;left:0;width:100%;height:100%;object-fit:cover;object-position:center;opacity:1;transition-delay:500ms"/><noscript><picture><source srcset="/static/6fd078aee05c54dfd405935dc66065cf/cb3d3/siddhant.jpg 150w,
+/static/6fd078aee05c54dfd405935dc66065cf/c83a6/siddhant.jpg 300w,
+/static/6fd078aee05c54dfd405935dc66065cf/775d9/siddhant.jpg 600w,
+/static/6fd078aee05c54dfd405935dc66065cf/2b1a3/siddhant.jpg 900w,
+/static/6fd078aee05c54dfd405935dc66065cf/81ef8/siddhant.jpg 1200w,
+/static/6fd078aee05c54dfd405935dc66065cf/7e5d2/siddhant.jpg 1983w" sizes="(max-width: 600px) 100vw, 600px" /><img loading="lazy" sizes="(max-width: 600px) 100vw, 600px" srcset="/static/6fd078aee05c54dfd405935dc66065cf/cb3d3/siddhant.jpg 150w,
+/static/6fd078aee05c54dfd405935dc66065cf/c83a6/siddhant.jpg 300w,
+/static/6fd078aee05c54dfd405935dc66065cf/775d9/siddhant.jpg 600w,
+/static/6fd078aee05c54dfd405935dc66065cf/2b1a3/siddhant.jpg 900w,
+/static/6fd078aee05c54dfd405935dc66065cf/81ef8/siddhant.jpg 1200w,
+/static/6fd078aee05c54dfd405935dc66065cf/7e5d2/siddhant.jpg 1983w" src="/static/6fd078aee05c54dfd405935dc66065cf/775d9/siddhant.jpg" alt="" style="position:absolute;top:0;left:0;opacity:1;width:100%;height:100%;object-fit:cover;object-position:center"/></picture></noscript></div></div><div class="jss110"><h2 class="jss111 jss124 jss138 jss104 jss105">Siddhant Bagri</h2><h3 class="jss111 jss125 jss138 jss104 jss106">Developer</h3><p class="jss111 jss120 jss104">He is an Engineering, Year 1 student from Kolkata, India.</p></div></div></div><div class="jss6 jss45 jss65 jss79"><div class="jss102"><div class="jss108"><div class="jss107 gatsby-image-wrapper" style="position:relative;overflow:hidden"><div style="width:100%;padding-bottom:97.06457925636008%"></div><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAATCAYAAACQjC21AAAACXBIWXMAABYlAAAWJQFJUiTwAAAD90lEQVQ4y2VUW0xcVRS9r7kM82Zel84MI8wMHWCgoFgkpY1YrIlpI1XBPqAhtmrTKAo1ak2xxfgI1rQFUqFoEEs7KBL7VKEt0Zago1HHyJgyKVUrLY3xw0aj8c/lOefOC/3YObnn7r3O2nutczhe5JEMgYWQCB6cwOG2W0MoKPCA4ziIkkDyOGTWsBDSK/d/IIH9lDQiLIYsrKutxsfHh+HzeVVQsp8mQHNJjaDW0JUTMtixVVLZCaSwPM+GlmUKju5qxuo7yhggPSh5KJ9a08El28tkyVhIIratDGH8qXrcHNqJ9ZX+RYDpbjIiyTANSsAIkEaWWHGxQ4/xJ9ZiZPvqFJiUaFn47xyTM8xkSMGoELQ4VBbCk1s3Y7ChHJHO9VhWGmT76hzTBFJtC4taVpnxBExnyEZfzz4szMVwNT6D2MlBXDu5H9Fz7+LY8BC8+ao4kiQucgQVJCGKuqmRNSyxeXMjrs9+i4XLMczHY/jz1wVcmfkG5z94B/jnLwwcOsjyZJLPiIgiAxfFFKCYaJVHtk6LE6NHEZ08jemzpxjLm1fjiE5P4tPTYfw9P4vRt/sYoFYrM/GSY6BBHcIYShoqAo9Kbw6mX2lB/+7HMdL7KuZjX+G3Hy7hxJEBDPe8hD8uR3Fh/FQCgGeRYzEicIsCd66NmJpPAgosqbU2gM/aVmH5Ujc+HOrGzPnj+CUewdSZfhzobMeNiRG8d/BFOO0G1JYp6NhYgeH223FoZxW23JsQTRVEVSuk6LFnTRD9LXfhi77n8dPEAGE4gd/nPsKVqTFE9tTjwt5N6N1Wg6ZVHlQGclAdtGJd49146NG1eGTHhiRDdRYlJX50dzTjyO770dVQicldTZgLP42LPY2Ihp9D9457sP/BFaguUNIWknUIBApRFFyKinJym6ggslZV+OW92/Hj7Bn07mvH2BttePOZBnzetxXXI2H8/F0E9XUroZPVm0TnTmuzsjTQ67XQ6mRY7WZwMlGL49XTXu9qRezrMRzufgHRT95CV8fDuPH9KK7NXkRH22PY0ngfc4MoiSlT01tlJsLY7RY4nFZwfr+HPFFB+MgT9Wx7E94Pv4b4l2FcmjqMTQ/UYM2dpago9RCbaOBxOVQjSzwLSoT610Aug9GoYyvnyXOSp2kJPG4H6upqcGywE0M9rVixPJB4A0Vos7PgdFiYNehtEpnfOFhyTKiqqoDf74XRpIfJZADn9i6B2+tidItDZLjFPnJaNgOxWk1klZmJLWYD7DYzMy+7y4ShnjCykT2TWQ8DYWg06sEVlQRRXFKEAl8+Cgvz4clzQclV4HKpYbfbSJEVTqcDuWTfRr/tVhb0n6LYSb6DhVNx4F+oQFn788vuigAAAABJRU5ErkJggg==" alt="" style="position:absolute;top:0;left:0;width:100%;height:100%;object-fit:cover;object-position:center;opacity:1;transition-delay:500ms"/><noscript><picture><source srcset="/static/6cc6bc96b9dea7d68f7101210aac6c40/d3809/welvin.png 150w,
+/static/6cc6bc96b9dea7d68f7101210aac6c40/fdbb0/welvin.png 300w,
+/static/6cc6bc96b9dea7d68f7101210aac6c40/59139/welvin.png 600w,
+/static/6cc6bc96b9dea7d68f7101210aac6c40/cb30f/welvin.png 900w,
+/static/6cc6bc96b9dea7d68f7101210aac6c40/b1ce6/welvin.png 1022w" sizes="(max-width: 600px) 100vw, 600px" /><img loading="lazy" sizes="(max-width: 600px) 100vw, 600px" srcset="/static/6cc6bc96b9dea7d68f7101210aac6c40/d3809/welvin.png 150w,
+/static/6cc6bc96b9dea7d68f7101210aac6c40/fdbb0/welvin.png 300w,
+/static/6cc6bc96b9dea7d68f7101210aac6c40/59139/welvin.png 600w,
+/static/6cc6bc96b9dea7d68f7101210aac6c40/cb30f/welvin.png 900w,
+/static/6cc6bc96b9dea7d68f7101210aac6c40/b1ce6/welvin.png 1022w" src="/static/6cc6bc96b9dea7d68f7101210aac6c40/59139/welvin.png" alt="" style="position:absolute;top:0;left:0;opacity:1;width:100%;height:100%;object-fit:cover;object-position:center"/></picture></noscript></div></div><div class="jss110"><h2 class="jss111 jss124 jss138 jss104 jss105">Welvin Bun</h2><h3 class="jss111 jss125 jss138 jss104 jss106">Developer</h3><p class="jss111 jss120 jss104"></p></div></div></div></div></div></div></div></div><script>
+  
+  
+  if(true) {
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+  }
+  if (typeof ga === "function") {
+    ga('create', 'UA-133175756-1', 'auto', {});
+      
+      
+      
+      
+      
+      }</script><script id="gatsby-script-loader">/*<![CDATA[*/window.pagePath="/";window.webpackCompilationHash="c19ac31cc5eab454e589";/*]]>*/</script><script id="gatsby-chunk-mapping">/*<![CDATA[*/window.___chunkMapping={"app":["/app-46cbf221fde7974db1af.js"],"component---node-modules-gatsby-plugin-offline-app-shell-js":["/component---node-modules-gatsby-plugin-offline-app-shell-js-3e75e5117855d0878217.js"],"component---src-pages-404-js":["/component---src-pages-404-js-fb4c513ab020eca169a5.js"],"component---src-pages-index-js":["/component---src-pages-index-js-1df19dbb2d532c561155.js"]};/*]]>*/</script><script src="/component---src-pages-index-js-1df19dbb2d532c561155.js" async=""></script><script src="/commons-51531fabdce590942fcc.js" async=""></script><script src="/app-46cbf221fde7974db1af.js" async=""></script><script src="/webpack-runtime-29fe2420a4567f3007a7.js" async=""></script><script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script><script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script></body></html>
