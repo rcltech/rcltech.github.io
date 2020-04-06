@@ -1,0 +1,32 @@
+{
+  "files": {
+    "main.css": "/static/css/main.fdac441f.chunk.css",
+    "main.js": "/static/js/main.5db5cb6b.chunk.js",
+    "main.js.map": "/static/js/main.5db5cb6b.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.164c5f16.js",
+    "runtime-main.js.map": "/static/js/runtime-main.164c5f16.js.map",
+    "static/js/2.53ff6f9c.chunk.js": "/static/js/2.53ff6f9c.chunk.js",
+    "static/js/2.53ff6f9c.chunk.js.map": "/static/js/2.53ff6f9c.chunk.js.map",
+    "index.html": "/index.html",
+    "precache-manifest.689f8242e213c1adb88840663398b017.js": "/precache-manifest.689f8242e213c1adb88840663398b017.js",
+    "service-worker.js": "/service-worker.js",
+    "static/css/main.fdac441f.chunk.css.map": "/static/css/main.fdac441f.chunk.css.map",
+    "static/js/2.53ff6f9c.chunk.js.LICENSE.txt": "/static/js/2.53ff6f9c.chunk.js.LICENSE.txt",
+    "static/media/1.jpg": "/static/media/1.ec243b7e.jpg",
+    "static/media/ClubLogo.png": "/static/media/ClubLogo.83c07097.png",
+    "static/media/backgrounimg.jpg": "/static/media/backgrounimg.2ac1bb3c.jpg",
+    "static/media/gela.jpg": "/static/media/gela.48200817.jpg",
+    "static/media/janvi.jpg": "/static/media/janvi.99b5a126.jpg",
+    "static/media/owl.png": "/static/media/owl.e4797bb7.png",
+    "static/media/seanchok.jpg": "/static/media/seanchok.da7f7f45.jpg",
+    "static/media/siddhant.jpg": "/static/media/siddhant.42702f86.jpg",
+    "static/media/sls.png": "/static/media/sls.000429b6.png",
+    "static/media/welvin.jpg": "/static/media/welvin.71c2bd6e.jpg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.164c5f16.js",
+    "static/js/2.53ff6f9c.chunk.js",
+    "static/css/main.fdac441f.chunk.css",
+    "static/js/main.5db5cb6b.chunk.js"
+  ]
+}
